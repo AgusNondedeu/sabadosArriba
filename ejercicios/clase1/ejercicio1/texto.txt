@@ -1,0 +1,10 @@
+class Compra {
+   String cliente;
+   String AutoModelo; // Chevrolet corsa
+}
+
+Ingresar por consola el cliente y el modelo
+
+Grabar en una base de datos la clase compra
+
+ 

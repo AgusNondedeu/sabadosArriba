@@ -1,0 +1,184 @@
+----------------------------------------------------------------------
+Patrones de diseño
+----------------------------------------------------------------------
+
+Clase Madre
+
+Clase Hija 
+
+La relacion es de Clase Hija es un Clase Madre
+
+
+Vehiculo {}
+Moto {}
+Camion {}
+---------------------------- NO VA --- Herencia de tipos.
+
+Class Moto {
+   DatosVehiculo datosVehiculo;
+}
+
+----------------------------------------------------------
+
+ComprobanteABC {
+   Documento { Cliente, Domicilio, CUIT }
+}
+
+OC {
+   Documento doc;
+}
+
+----------------------------------------------------------
+
+FileWriter extends Writer {   
+}
+PrintWriter extends Writer {
+}
+
+
+Este tipo de Herencia se llama herencia de comportamiento
+UTILIZAR CON CAUTELA !!!!!
+
+PENSAR ANTES DE UTILIZAR
+
+----------------------------------------------------------
+
+Ultimo tipo de herencia se llama Inversion de Control
+El patron de diseño se llama "Template Method"
+
+Lo usa Laravel
+Lo usa Servlet
+Lo us ASP.NET MVC REST
+
+----------------------------------------------------------
+
+Objetos Que son ?
+
+Instancia de una clase.
+
+Atributos y Metodos
+
+Ave {
+   Plumas
+   Color
+   Patas
+   Uñas
+}
+
+Estructura de datos; 
+
+Servicio
+
+FileWriter: Es un servicio que escribe en un archivo 
+DolarReader: Es un servicio que consume un api rest del banco central los valores dolar
+EscritorDeZocalo: Escribe esos valores en el zocalo
+
+class MultiplesDolares {
+   Oficial,
+   Blue,
+   Mep,
+   CCL,
+   Dolar Soja
+}
+
+class DolarReader {
+   private Atributo ultimaLectura;
+   
+   MultiplesDolares leer();
+}
+
+class EscritorDeZocalo {
+   void grabar(MultiplesDolares multiplesDolares) {
+   }
+}
+
+----------------------------------------------------------
+
+class MultiplesDolares {
+   Oficial,
+   Blue,
+   Mep,
+   CCL,
+   Dolar Soja
+}
+
+----------------------------------------------------------
+
+Para que quiero instanciar un servicio varias veces ??????
+En algunos casos Lo necesito, pero en general No tiene sentido.
+
+Estructuras de datos muchas instancias ????
+SIIIIIIIIIIIIIIIIIII
+
+Estructuras de datos ? Mutan o Son Inmutables ??
+
+Todos estan en lo cierto.
+
+Pueden mutar ? es decir cambiar algun de valor ? si.
+Las inmutables se llevan mejor con multiprocesador.
+
+----------------------------------------------------------
+
+Ejemplos de interfaces en la vida cotidiana.
+
+Enchufe: Dos patas inclinadas y una debajo.
+         
+Calentador de agua
+   + Electrica
+   + Micronodas
+   + Pava metalica
+
+Portalampara tenemos interfaces E27 
+
+Rieles de los cajones ?
+   Puedo cambiar de cajon manteniendo la interfaz ?
+
+Canillas de 3/4 
+   Oro
+   Plastico
+   China
+   Acero copado
+
+Mientra sea de 3/4 cualquier va bien.
+
+BlueTooth -> Puedo cambiar la fuente de transmicion y el receptor de 
+             forma independiente.
+
+InfraRojo es una interfaz.
+
+RadioFrecuencia
+    Compu Dongle - Pituto USB y el Mouse
+
+Dientes de Engranajes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
