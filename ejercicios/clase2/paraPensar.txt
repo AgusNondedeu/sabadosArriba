@@ -1,0 +1,23 @@
+Ya vimos que con strategy podemos abstraernos y si viene
+un cambio podemos lidiar con el mucho mas facil y
+respetando el open closed principle.
+
+Para pensar
+
+Que pasa si quiero:
+
+a) Que si falla el SQL entonces grabe en un archivo en formato
+JSON
+
+NO TOCAR LAS CLASES YA IMPLEMENTADAS !!!!!
+
+b) Que pasa si quiero hacer que la lectura no se haga de
+   consola sino de un archivo csv
+
+   Chevrolet;Astra
+   WV;Gol
+   Fiat;Cronos
+   Renault;Megane
+
+
+

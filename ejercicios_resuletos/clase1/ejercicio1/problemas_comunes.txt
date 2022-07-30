@@ -1,0 +1,22 @@
+Principios SOLID
+
+Open Closed Principle
+
+Los servicios deberian ser cerrados a los cambios.
+Que sean extensibles
+
+En virtud de lo que entregaron se plantean algunos problemas.
+
+Que pasa si me piden que ahora las compras vengan en lote.
+
+Un Lote seria: archivo csv
+
+Chevrolet;Astra
+WV;Gol
+Fiat;Cronos
+Renault;Megane
+
+Que pasa si me piden que cuando sea que falla el SQL grabe
+en un archivo en formato JSON
+
+
