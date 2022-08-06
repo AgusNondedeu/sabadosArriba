@@ -14,10 +14,10 @@ NO TOCAR LAS CLASES YA IMPLEMENTADAS !!!!!
 b) Que pasa si quiero hacer que la lectura no se haga de
    consola sino de un archivo csv
 
-   Chevrolet;Astra
-   WV;Gol
-   Fiat;Cronos
-   Renault;Megane
+   Beto; Chevrolet Astra
+   Ana; WV Gol
+   Ruben; Fiat Cronos
+   Marcela; Renault Megane
 
 
 
