@@ -7,11 +7,11 @@ public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Curso patrones - Bienvenidos");
         
-        Validadores.validarMetodoDeGrabacion(args);
+        // Validadores.validarMetodoDeGrabacion(args);
         
         // Un factory trucho
         var lectorCompra = Factory.obtenerLectorDeCompra();
-        var grabadorCompra = Factory.obtenerGrabadorDeCompra(args[0]);
+        var grabadorCompra = Factory.obtenerGrabadorDeCompra();
         
         
         var compra = lectorCompra.leer();
