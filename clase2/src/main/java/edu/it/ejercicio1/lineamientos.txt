@@ -1,0 +1,22 @@
+public interface Displayable {
+    public void display()
+}
+
+public class ContadorEstandar implements Displayable {
+   private Integer x = 1;
+   
+   public void display() {
+      System.out.println(x):
+      x++;
+   }
+}
+
+pulic class Proceso implements Runnable {
+   public void run() {
+      Displayable disp = new ContadorEstandar();
+
+      for (;;) {
+         disp.display();
+      }
+   }
+}

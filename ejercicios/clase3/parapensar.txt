@@ -1,0 +1,7 @@
+CLI (ES UN BODRIO EN EL QUE NO ME QUISIERA METER) ---------VERIFICO HORA ----> GRABAR_SQL_JSON ---> SQL --> JSON
+
+Ahora me piden, podiras hacer que entra las 14Hs y las 15Hs No molestar el SQL ?
+
+ 
+
+                   

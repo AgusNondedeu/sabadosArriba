@@ -1,7 +1,6 @@
 package edu.it;
 
-import edu.it.factories.Factory;
-import edu.it.utiles.Validadores;
+import edu.it.ejercicio1.Proceso;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -9,6 +8,7 @@ public class App {
         
         // Validadores.validarMetodoDeGrabacion(args);
         
+        /*
         // Un factory trucho
         var lectorCompra = Factory.obtenerLectorDeCompra();
         var grabadorCompra = Factory.obtenerGrabadorDeCompra();
@@ -16,5 +16,8 @@ public class App {
         
         var compra = lectorCompra.leer();
         grabadorCompra.grabar(compra);
+        */
+        
+        new Proceso().run();
     }
 }
