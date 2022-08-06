@@ -1,0 +1,37 @@
+Decorator
+
+Recordar que es una clase que implementa una interfaz y a la vez compone 
+(reordar que componer es tener un atributo y nada mas)
+una interfaz igual de la que implemnta.
+
+class A implements Func {
+  private Func func;
+}
+
+Ejercicio:
+
+Hacer un contador de 1 a 100 con el siguiente criterio y utilizando decorator
+
+--------------------------------------------------------
+1
+--------------------------------------------------------
+
+2
+
+--------------------------------------------------------
+3
+--------------------------------------------------------
+
+4
+
+--------------------------------------------------------
+5
+--------------------------------------------------------
+
+6
+
+--------------------------------------------------------
+7
+--------------------------------------------------------
+
+
