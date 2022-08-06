@@ -7,7 +7,7 @@ public class ConectorJPA {
 	private EntityManagerFactory emf;
 	
 	public ConectorJPA() {
-		emf = Persistence.createEntityManagerFactory("mysql");
+		emf = Persistence.createEntityManagerFactory("mariadb");
 	}
 	public EntityManager getEntityManager() {
 		return emf.createEntityManager();
