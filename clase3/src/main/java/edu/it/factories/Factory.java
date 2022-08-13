@@ -6,6 +6,8 @@ import edu.it.repository.GrabadorDeCompraSQL;
 import edu.it.repository.GrabadorDeCompraSQL_O_JSON;
 import edu.it.service.LectorDeCompra;
 import edu.it.service.LectorDeCompraPorConsola;
+import edu.it.service.ProcesoCompra;
+import edu.it.service.ProcesoCompraUnoUno;
 
 public class Factory {
 	public static LectorDeCompra obtenerLectorDeCompra() {
@@ -29,5 +31,11 @@ public class Factory {
 			ex.printStackTrace();
 			throw new RuntimeException();
 		}
+	}
+	public static ProcesoCompra obtenerProcesoCompraEstrategia1() {
+		return new ProcesoCompraUnoUno(
+					obtenerLectorDeCompra(),
+					obtenerGrabadorDeCompra()
+				);
 	}
 }
