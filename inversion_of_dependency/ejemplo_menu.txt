@@ -1,0 +1,85 @@
+----------------------------------------------------------------------
+Ejemplo de inversion of dependency
+----------------------------------------------------------------------
+
+Como era antes ?????
+
+class Menu {
+   public show mostrar() {
+      // MostrarOpciones
+      // Leer por teclado
+      switch (opcion) {
+         case 1:
+             Factory.obtenerServicioDB();
+             break;
+         case 2: 
+             Factory.obtenerServicioHorario();
+             break;
+         case 3:
+             return;
+      }
+   }
+}
+
+----------------------------------------------------------------------
+Que podemos hacer ??????
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+MODULO MENU
+----------------------------------------------------------------------
+
+El modulo Menu, vamos a escribir un menu generico, donde se configura
+en un archivo de .json todos los servicios que se van a crear a partir
+de cada una de las configuraciones
+
+Ahora bien, cada servicio, tiene que implementar una interfaz que menu
+conozca
+
+Ejemplo Runnable
+
+Podria tener en un HashMap<Integer, String> opcionesMenu;
+
+Si el usuario presiona 1
+
+Runnable r = Activator.newInstance(opcionesMenu.get(1))
+r.run()
+
+Si el usuario presiona 2
+
+Runnable r = Activator.newInstance(opcionesMenu.get(2))
+r.run()
+
+Si el usuario presiona 3 sale de la aplicacion.
+
+Observaciones: Fijense que  en esta .dll o .jar no existe nada
+referido a ningun servicio en particular, solo hago referencia
+a un Runnable
+
+----------------------------------------------------------------------
+En cuanto a los servicios a instanciar lo unico que hace falta
+es que implementen Runnable
+----------------------------------------------------------------------
+
+En otra .dll o .jar vamos a tener -cada .dll o .jar un servicio 
+diferente.
+
+public class MantenimientoBD implements Runnable {
+   public void run() {
+   }
+}
+
+
+En java, lo unico que tenemos que tener en cuenta es que todos los .jar
+tienen que estar en el class path.
+
+En c# voy a hacer un proyecto minimo donde incluyo todas las .dll que 
+voy a usar y nada mas.
+
+
+
+
+
+
+
+

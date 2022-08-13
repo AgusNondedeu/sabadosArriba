@@ -1,0 +1,31 @@
+En el problema del plan de ahorro, nos piden.
+
+Que si bien el input puede ser por teclado.
+
+Se requiere que un input pueda ser un archivo csv
+donde esten los datos de las diferentes compras
+de un dia determinado.
+
+Aldo; Lamborgini
+Estefania; Ducati
+Ivana; Chevrolet prisma
+Lucas; Fiat dobleau
+
+Hasta ahora, las compras se producian de a una
+y ahora las compras se producen en lote.
+
+una cosa es metodo que me retorna Compra
+a un metodo que me retorna List<Compra>
+
+var lectorCompra = Factory.obtenerLectorDeCompra();
+var grabadorCompra = Factory.obtenerGrabadorDeCompra();
+                
+var compra = lectorCompra.leer();
+grabadorCompra.grabar(compra);
+
+Pongamos que esto es un proceso que se llama ProcesoCompraUnoUno
+Pongamos que otro proceso se llama ComprasEnLote
+
+Ambos implementar una interfaz que sea procesoCompra
+
+

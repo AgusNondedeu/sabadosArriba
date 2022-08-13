@@ -1,0 +1,44 @@
+El patron mediator tiene como objetivo desacoplar dos objetos que necesitan
+comunicarse entre si, pero no directamente sino a travez de un broker.
+
+Objeto1: Si le tuviera que enviar un mensaje a objeto2 tendira que tener
+una referencia cocreta a objeto 2. Para esto tendria que conocer el tipo
+de dato de objeto2.
+
+Ahi estamos en el problema de acoplamiento. 
+Clase1 y Clase2 necesitan conocerse mutuamente.
+
+Que pasa si decidimos meter en medio un broker
+
+Clase1 envia un mensaje en formato JSON al broker con estet formato
+
+Clase 1 es un sensor de velocidad
+
+{
+   destino: "edu.it.EvaluadorDeMulta",
+   mensaje: {
+      Vehiculo: "",
+      VelocidadMedida: ""
+   }
+}
+
+Clase2 es un EvaluadorDeMulta
+
+Le llega a traves de un broker (NO de Clase1), es decir EvaluadorDeMulta
+No conoce mas que el broker.
+
+Imagen de como es un broker (Mediador)
+https://reactiveprogramming.io/books/patterns/img/patterns-articles/mediator-diagram.png
+
+
+Enunciado del ejercicio
+https://raw.githubusercontent.com/alumnos2020/sensordetransito/master/ejercicio.txt
+
+Actor model
+https://www.brianstorti.com/assets/images/actors.png
+
+
+
+
+
+

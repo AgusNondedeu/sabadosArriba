@@ -6,9 +6,10 @@ public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Curso patrones - Bienvenidos");
         
-        //Validadores.validarMetodoDeGrabacion(args);
+        var facAbs = (FactoryAbstracto)Class.forName(args[0])
+        .getConstructor()
+        .newInstance();
         
-        FactoryAbstracto estrategiaCompra = null; // Algun derivado de factory abstracto
-        estrategiaCompra.obtenerProcesoCompra().run();
+        facAbs.obtenerProcesoCompra().run();
     }
 }
