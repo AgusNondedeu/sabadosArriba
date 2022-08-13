@@ -8,7 +8,7 @@ public class App {
         
         //Validadores.validarMetodoDeGrabacion(args);
         
-        var estrategiaUnoUno = Factory.obtenerProcesoCompraEstrategia1();
+        var estrategiaUnoUno = Factory.obtenerProcesoCompraEstrategia2();
         estrategiaUnoUno.run();
     }
 }
