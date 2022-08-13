@@ -1,6 +1,6 @@
 package edu.it;
 
-import edu.it.factories.Factory;
+import edu.it.factories.FactoryAbstracto;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -8,7 +8,7 @@ public class App {
         
         //Validadores.validarMetodoDeGrabacion(args);
         
-        var estrategiaUnoUno = Factory.obtenerProcesoCompraEstrategia2();
-        estrategiaUnoUno.run();
+        FactoryAbstracto estrategiaCompra = null; // Algun derivado de factory abstracto
+        estrategiaCompra.obtenerProcesoCompra().run();
     }
 }
